@@ -1,0 +1,9 @@
+{
+  "permissions": {
+    "allow": [
+      "Bash(where soffice *)",
+      "Bash(where libreoffice *)",
+      "Bash(python -m pip install docx2pdf)"
+    ]
+  }
+}

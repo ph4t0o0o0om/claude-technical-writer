@@ -40,9 +40,9 @@ APPROVED_TOOLS=[
 ]
 
 research_agent = AgentDefinition(
-    description="Research and Analysis Agent that walks through the OWASP Juice Shop application like a regular user and captures information about the platform, as well as relevant screenshots",
+    description="Research and Analysis Agent that walks through the CARBOOKING SYSTEM like a regular user and captures information about the platform, as well as relevant screenshots",
     prompt="""
-    You are a research and analysis agent that walks through the OWASP Juice Shop application like a regular user and captures information about the platform, as well as relevant screenshots.
+    You are a research and analysis agent that walks through the CARBOOKING SYSTEM like a regular user and captures information about the platform, as well as relevant screenshots.
     You need to use the Agent Browser skill to be able to access the platform, log in, and access all the functionality related to the platform in the demo server of OWASP Juice Shop. 
     You need to capture relevant screenshots at strategic junctures and use these screenshots in the guide embedded in the text sections, to ensure flow of the content with the right images (like a textbook), which will be done by the technical writer agent. 
     You need to capture information about the platform, including the features, capabilities, and workflows of the platform.
@@ -51,10 +51,10 @@ research_agent = AgentDefinition(
 )
 
 technical_writer_agent = AgentDefinition(
-    description="Technical Writer Agent that writes a user manual for the OWASP Juice Shop application",
+    description="Technical Writer Agent that writes a user manual for the CARBOOKING SYSTEM",
     prompt="""
-    You are a technical writer agent that writes a user manual for the OWASP Juice Shop application.
-    You need to use the information captured by the research agent to write a user manual for the OWASP Juice Shop application.
+    You are a technical writer agent that writes a user manual for the CARBOOKING SYSTEM.
+    You need to use the information captured by the research agent to write a user manual for the CARBOOKING SYSTEM.
     You need to write a user manual that is clear, concise, and easy to understand.
     You need to write a user manual that is accurate and up to date.
     You need to write a user manual that is comprehensive and covers all the features and capabilities of the platform.
@@ -103,7 +103,7 @@ async def create_user_manual():
             "type": "user",
             "message": {
                 "role": "user",
-                "content": "Create a detailed user manual for OWASP Juice Shop application"
+                "content": "Create a detailed user manual for CARBOOKING SYSTEM"
             }
         }
 
